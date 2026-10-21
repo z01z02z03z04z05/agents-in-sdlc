@@ -37,6 +37,7 @@ A inspeção e a implantação de agentes hospedados usam a Azure Developer CLI 
    ```
 
 3. Execute `azd config show` para verificar a assinatura do Azure. Se ela estiver vazia ou incorreta, atualize-a com `azd config set defaults.subscription <subscription-id>` e execute `azd config show` novamente para confirmar a alteração.
+
 ## Gerar a estrutura inicial do Backer Concierge
 
 O Canvas gera o código, a estrutura de pastas e o `azure.yaml` na raiz que conectam o Backer Concierge à implantação de modelo existente.

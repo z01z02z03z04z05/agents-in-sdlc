@@ -92,7 +92,7 @@ Tailspin Toys 후원자는 카테고리와 퍼블리셔로 게임을 필터링�
 13. 동일한 이슈 세션에서 다음을 입력합니다.
 
     ```plaintext
-    Use the Microsoft Foundry skill to create a resource group named rg-tailspin-toys and a Foundry project named tailspin-toys.
+    Microsoft Foundry 스킬을 사용해 `rg-tailspin-toys`라는 리소스 그룹과 `tailspin-toys`라는 Foundry 프로젝트를 만들어 주세요.
     ```
 
     ![Foundry 프로젝트 생성](../../../../_images/app-8-foundry-project-created.png)
@@ -100,7 +100,7 @@ Tailspin Toys 후원자는 카테고리와 퍼블리셔로 게임을 필터링�
 14. Copilot에 모델을 추천하도록 요청합니다. 이슈에서 시작한 세션이므로 이슈의 승인 기준이 이미 컨텍스트에 포함되어 있습니다.
 
     ```plaintext
-    Use the Microsoft Foundry skill to recommend two or three current chat models in the tailspin-toys project that meet this issue's acceptance criteria. Explain the tradeoffs and wait for me to choose.
+    Microsoft Foundry 스킬을 사용해 `tailspin-toys` 프로젝트에서 사용할 수 있는 최신 채팅 모델 중 이 이슈의 수락 기준을 충족하는 모델 두세 개를 추천해 주세요. 장단점을 설명하고 제가 선택할 때까지 기다려 주세요.
     ```
 
 15. Copilot이 `microsoft-foundry` 스킬을 로드하는지 확인한 다음, 장단점을 고려하여 사용 가능한 모델을 선택합니다. Microsoft Foundry 호스팅 에이전트 빠른 시작에서는 현재 `gpt-5.4-mini`를 사용하지만, 가용성과 할당량은 지역에 따라 다릅니다.
@@ -110,7 +110,7 @@ Tailspin Toys 후원자는 카테고리와 퍼블리셔로 게임을 필터링�
 16. Copilot에 선택한 모델을 배포하도록 요청하고, 승인하기 전에 대상 프로젝트와 비용을 검토합니다.
 
     ```plaintext
-    Deploy the model I selected to the tailspin-toys Foundry project, using the model name as the deployment name.
+    선택한 모델을 `tailspin-toys` Foundry 프로젝트에 배포하고 모델 이름을 배포 이름으로 사용해 주세요.
     ```
 
 > [!TIP]

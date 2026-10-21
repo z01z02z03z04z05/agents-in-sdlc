@@ -76,7 +76,7 @@ Tailspin Toys에는 데이터베이스를 살펴보는 캔버스가 이미 포�
    ```plaintext
    Create a Kanban triage canvas for this repo's open issues and save it under .github/extensions/. Highlight the three issues you'd prioritize and explain why, with the rest below. Include summaries and links.
 
-   Give each card an "Add to current context" action that adds the issue details without starting work or changing the issue. Make it keyboard-accessible and open it so I can try it.
+   각 카드에 **Add to current context** 작업을 추가해 주세요. 이 작업은 구현을 시작하거나 이슈를 변경하지 않고 이슈 세부 정보를 현재 컨텍스트에 추가해야 합니다. 키보드로 사용할 수 있도록 만들고 제가 테스트할 수 있게 캔버스를 여세요.
    ```
 
 Copilot은 `.github/extensions` 아래에 캔버스 확장을 만들고 앱의 오른쪽 패널에 공유 화면을 엽니다. 생성된 확장은 단순한 시각적 산출물이 아니라 실행 가능한 리포지토리 콘텐츠이므로 다음으로 파일과 동작을 살펴봅니다.

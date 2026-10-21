@@ -60,7 +60,7 @@ Copilot CLI를 처음 실행하면 GitHub 계정으로 인증하라는 메시지
 3. Copilot CLI에 다음 메시지가 표시됩니다.
 
    ```plaintext
-   Copilot can read files in this folder and, with your permission, edit them or run code and shell commands. It will remember your permissions for the rest of this session.
+   Copilot은 이 폴더의 파일을 읽고, 권한을 허용하면 파일을 편집하거나 코드 및 셸 명령을 실행할 수 있습니다. 허용한 권한은 이 세션이 끝날 때까지 기억합니다.
 
    Do you trust the files in this folder?
    ```

@@ -9,15 +9,15 @@ lastUpdated: 2026-09-16
 
 本可选系列使用 GitHub Copilot CLI 和 Microsoft Foundry 技能，将 Tailspin Toys 目录变为对话助手。三个模块将从项目和模型设置开始，逐步构建托管智能体，并完成可用的网站集成。
 
-在本系列中，将完成以下任务：
+本系列将学习如何：
 
-- 准备 Azure 环境，并使用目录测试模型。
-- 为托管的 Backer Concierge 智能体生成脚手架，进行测试并部署。
+- 准备 Azure 环境，并使用目录测试模型；
+- 为托管的 Backer Concierge 智能体生成脚手架、测试并部署；
 - 通过本地服务端代理和聊天组件，将智能体连接到网站。
 
 ## 场景
 
-Tailspin Toys 支持者可以按类别和发行商浏览游戏，但这些筛选条件无法帮助所有人找到下一款游戏。有些支持者会问：*喜欢 Git 双关语的人适合哪些游戏？* 下拉选项无法回答这类问题。
+Tailspin Toys 的支持者可以按类别和发行商浏览游戏，但这些筛选条件无法帮助所有人找到下一款游戏。有些支持者会问：*喜欢 Git 双关语的人适合哪些游戏？* 下拉选项无法回答这类问题。
 
 Tailspin Toys 希望打造一个 **Backer Concierge** 礼宾助手，通过对话帮助支持者发现游戏。它应推荐 Tailspin 目录中的游戏，在偏好不明确时提出一个简短的澄清问题，并在支持者追问时记住之前的推荐。
 
@@ -39,7 +39,7 @@ Tailspin Toys 希望打造一个 **Backer Concierge** 礼宾助手，通过对�
 > 本系列会创建计费的 Azure 资源，包括模型部署和托管智能体。创建资源前，需要检查所选订阅、区域、配额和预估费用。即使在第一个或第二个模块后停止，也应按照[清理说明][cleanup]操作。
 
 1. 要开始本可选系列，请继续学习[准备项目和模型][project-model]，其中包含设置说明。
-2. 如果更想完成核心工作坊，请继续学习[回顾与后续步骤][review]。
+2. 如果更想完成核心工作坊，请继续学习[总结和后续步骤][review]。
 
 ## 清理资源
 
@@ -74,7 +74,7 @@ Tailspin Toys 希望打造一个 **Backer Concierge** 礼宾助手，通过对�
 [project-model]: 1-project-and-model/
 [build-deploy]: 2-build-and-deploy/
 [connect-site]: 3-connect-to-site/
-[review]: ../9-review/
+[review]: ../10-review/
 [cleanup]: #清理资源
 [azure-skills]: https://github.com/microsoft/azure-skills#github-copilot-cli
 [foundry-skill]: https://learn.microsoft.com/azure/foundry/how-to/develop/use-microsoft-foundry-skill?tabs=copilot-cli

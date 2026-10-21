@@ -49,7 +49,7 @@ Azure 자격 증명에 액세스할 수 있는 코드는 프록시뿐입니다. 
 6. 채팅으로 돌아가 Copilot에 로컬 프록시를 테스트하도록 요청합니다.
 
    ```plaintext
-   Test the local /api/concierge endpoint by asking "Which games are under $30?" Show me the sanitized response and confirm that no credentials or internal conversation identifiers are returned.
+   로컬 `/api/concierge` 엔드포인트에 "30달러 미만인 게임은 무엇인가요?"라고 질문해 테스트해 주세요. 정제된 응답을 보여 주고 자격 증명이나 내부 대화 식별자가 반환되지 않는지 확인해 주세요.
    ```
 
 7. 응답을 검사합니다. 카탈로그에 가격 정보가 없음을 설명해야 합니다. Foundry 토큰, 자격 증명, 내부 대화 식별자, 프로젝트 엔드포인트, 스택 추적이 포함되어 있지 않은지 확인합니다. Function에 연결할 수 없거나 응답이 세부 정보를 유출하거나 가격을 지어내면, 민감한 정보를 제거한 실패 내용을 Copilot에 전달하고 수정한 다음, 계속하기 전에 프록시 테스트를 다시 실행합니다.
@@ -63,14 +63,14 @@ Azure 자격 증명에 액세스할 수 있는 코드는 프록시뿐입니다. 
 8. Copilot에 사이트 통합을 구현하도록 요청합니다.
 
    ```plaintext
-   Add an accessible Backer Concierge chat widget to the Astro site. Connect it to /api/concierge, preserve the conversation using the returned opaque handle, follow the existing design guidance, support keyboard use, keep Foundry details out of the browser, and add end-to-end tests covering the chat flow, conversation continuity, accessibility, error handling, and grounding boundaries.
+   Astro 사이트에 접근성 있는 Backer Concierge 채팅 위젯을 추가해 주세요. `/api/concierge`에 연결하고 반환된 불투명 핸들을 사용해 대화를 유지하며, 기존 디자인 지침을 따르고 키보드 사용을 지원하고 Foundry 세부 정보가 브라우저에 노출되지 않도록 해 주세요. 채팅 흐름, 대화 연속성, 접근성, 오류 처리, 그라운딩 범위를 다루는 엔드투엔드 테스트도 추가해 주세요.
    ```
 
 9. 다른 터미널에서 Copilot이 제공한 명령으로 Astro 개발 서버를 시작합니다. 사이트와 로컬 Function을 모두 실행 상태로 유지합니다.
 10. Copilot에 엔드투엔드 테스트를 실행하도록 요청합니다.
 
     ```plaintext
-    Run the end-to-end tests for the Backer Concierge widget in the Tailspin Toys site. Verify its core chat flow, conversation continuity, accessibility, error handling, grounding boundaries, and secure use of the local proxy. Report the results and include evidence for any failures.
+    Tailspin Toys 사이트의 Backer Concierge 위젯에 대한 엔드투엔드 테스트를 실행해 주세요. 기본 채팅 흐름, 대화 연속성, 접근성, 오류 처리, 그라운딩 범위, 로컬 프록시의 안전한 사용을 확인해 주세요. 결과를 보고하고 실패한 경우 근거를 포함해 주세요.
     ```
 
 11. 보고서를 검토하고 키보드 사용과 [호스팅 에이전트 승인 검사][agent-checks]의 두 턴 대화를 포함하여 보고된 동작을 브라우저에서 검증합니다. 브라우저 요청이 Foundry로 직접 전송되지 않고 불투명한 핸들과 함께 `/api/concierge`를 거치는지, 응답에 자격 증명이나 내부 Foundry 식별자가 노출되지 않는지 확인합니다. 추천과 누락된 정보에 대한 답변이 카탈로그 범위 안에 머무르는지 확인합니다. 실패한 테스트를 Copilot과 함께 해결하고 필요한 경우 영향을 받는 로컬 서비스를 다시 시작한 다음 테스트를 다시 실행합니다.
